@@ -1,0 +1,68 @@
+body{
+    background-color: #001514;
+    font-family: sans-serif;
+    padding: 20px 0;
+}
+main{
+    background-color: #8a817c;
+    border: 3px solid #f7fff6 ;
+    border-radius: 20px;
+    color: #f7fff6;
+    padding: 30px;
+    margin: auto;
+    min-width: 300px;
+    max-width: 500px;
+}
+form{
+    font-size: 16px;
+}
+h1, p{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+fieldset{
+    padding: 20px ;
+    border: none;
+    border-bottom: 2px solid #f7fff6;
+}
+fieldset:last-of-type{
+    border: none;
+}
+label{
+    display: block;
+    padding: 5px;
+    margin: 5px 0;
+}
+label[for="terms-and-conditions"]{
+    display: inline;
+}
+input, select, textarea{
+    width: 100%;
+    padding: 3px 0;
+    background-color: #ab9d95;
+    border: 2px solid #f7fff6;
+    border-radius: 5px;
+    color: #f7fff6;
+    font-size: 1.05rem;
+}
+textarea{
+    resize: none;
+}
+input[type="submit"]{
+    display: block;
+    width: 60%;
+    margin: 20px auto 0 auto;
+    border: none;
+    border-radius: 7px;
+}
+a{
+    color: #f7fff6;
+}
+.inline{
+    display: inline;
+    width: unset;
+}
+::placeholder{
+    color: #f7fff66d;
+}

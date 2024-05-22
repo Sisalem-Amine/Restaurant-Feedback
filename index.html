@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 id="title">Restaurant Feedback</h1>
+        <p id="description">Please consider, to complete this form so we wil improve our service</p>
+
+        <form method="post" action="" id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">First Name : <input type="text" name="name" id="name" required placeholder="Sisalem Amine"></label>
+                <label id="email-label" for="email">Email : <input type="email" name="email" id="email" required placeholder="example123@gmail.com"></label>
+                <label id="number-label" for="number">Age : <input type="number" name="number" id="number" min="10" max="120" required placeholder="20"></label>
+            </fieldset>
+            <fieldset>
+                <label>Please Select The Restaurant : 
+                    <select id="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="A">Restaurant A</option>
+                        <option value="B">Restaurant B</option>
+                        <option value="C">Restaurant C</option>
+                    </select>
+                </label>
+                <label>What you want to see improved in the future (required) : </label>
+                <label for="service">Service <input type="radio" value="service" id="service" name="feedback" checked class="inline"></label>
+                <label for="menu-diversity">Menu diversity <input type="radio" value="menu-diversity" id="menu-diversity" name="feedback" class="inline"></label>
+                <label for="customer-service">Customer Service <input type="radio" value="customer-service" id="customer-service" name="feedback" class="inline"></label>
+                <label for="delivery">Delivery <input type="radio" id="delivery" value="delivery" name="feedback" class="inline"></label>
+                <label for="other">Other <input type="radio" id="other" value="other" name="feedback" class="inline"></label>
+            </fieldset>
+            <fieldset>
+                <label for="comments">Comments : <textarea rows="3" cols="30" id="comments" name="comments" aria-expanded="false"></textarea></label>
+            </fieldset>
+            <fieldset>
+                <label for="terms-and-conditions"><input type="checkbox" required class="inline" name="terms-and-conditions" id="terms-and-conditions" value="terms-and-conditions"> By submitting this form you agree to the <a href="">terms and conditions</a></label>
+                <label for="updates"><input type="checkbox" id="updates" name="updates" class="inline" value="updates">Get Updates By Email</label>
+                <input type="submit" id="submit">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
